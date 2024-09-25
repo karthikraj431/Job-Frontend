@@ -4,7 +4,6 @@ import './App.css'
 
 import Admin from './module1/Admin'
 import Login from './module1/Login'
-import Profile from './module1/Profile'
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Signin from './module1/Signin'
@@ -23,6 +22,7 @@ import Intro from './module1/Intro'
 
 
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -36,7 +36,6 @@ function App() {
       <Route path='/admin'element={<Admin />}></Route>
       <Route path='/'element={<Intro />}></Route>
       <Route path='/login'element={<Login/>}></Route>
-      <Route path='/profile'element={<Profile />}></Route>
       <Route path='/signin'element={<Signin />}></Route>
       </Routes>
      
